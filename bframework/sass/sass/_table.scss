@@ -1,0 +1,55 @@
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+
+// -----------------------
+// Table 
+
+table
+{ // set no border 
+    //line-height: 2.2em;
+    border-collapse: collapse; // No border
+    
+    // --------------------
+    // Table class
+    
+    &.table // Table in full page
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+td // Set the border
+{
+    border: $table-border-size $table-set-style $table-td-color;
+}
+
+// -----------------------
+// Conf some stuff
+
+td, th
+{
+    display: table-cell;
+    vertical-align: inherit;
+    //border-top: 0;
+    text-transform: none;
+    text-align: left;
+    padding-left: 2px;
+}
+
+caption // Set the 'caption' text
+{
+    text-align: left;
+    
+    &.caption
+    {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}

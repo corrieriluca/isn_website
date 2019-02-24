@@ -1,0 +1,27 @@
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+
+/* Float ===============================================================================================*/
+.floatright // Float to right
+{
+    @include float(right);
+}
+.floatleft // Float to left
+{
+    @include float(left);
+}
+.floatnone // None 
+{
+    @include float(none);
+}
+// Outline
+.outlinestylenone
+{
+    outline-style: none;
+}

@@ -1,0 +1,707 @@
+@charset "UTF-8";
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+SASS source file
+
+§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+!Compile only this file for create the BFramework CSS!
+§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+2014
+MIT license
+*/
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+/*
+Var $navbar-number-of-content
+For mobile version : Add or remove for adding or removing a line
+1 line: $navbar-number-of-content: 1;
+2 line: $navbar-number-of-content: 2;
+3 line: $navbar-number-of-content: 3;
+4 line: $navbar-number-of-content: 4;
+*/
+ /* 
+
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.1 | Modified for the framework
+License: none (public domain)
+
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+body {
+  line-height: 1.375;
+  font-family: Arial sans-serif;
+}
+
+html, input, textarea, select, button, code, pre {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.005);
+  -webkit-font-smoothing: antialiased;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+.textgray {
+  color: gray;
+}
+
+.textyel {
+  color: yellow;
+}
+
+.textgreen {
+  color: green;
+}
+
+.textwhite {
+  color: white;
+}
+
+.textdblue {
+  color: darkblue;
+}
+
+.textdgray {
+  color: darkgray;
+}
+
+.textpurp {
+  color: purple;
+}
+
+.textbl {
+  color: black;
+}
+
+.textred {
+  color: red;
+}
+
+.textdred {
+  color: darkred;
+}
+
+.textaqua {
+  color: aqua;
+}
+
+.textdaqua {
+  color: #009e7d;
+}
+
+.textdgreen {
+  color: darkgreen;
+}
+
+.textlpurple {
+  color: #ff00ff;
+}
+
+.textgold {
+  color: #e6ff00;
+}
+
+.textdpurple {
+  color: #3a003a;
+}
+
+.textpink {
+  color: pink;
+}
+
+.textamblue {
+  color: #79f8f8;
+}
+
+.textazur1 {
+  color: #007FFF;
+}
+
+.textazur2 {
+  color: #1E7FCB;
+}
+
+.textlightazur {
+  color: #74D0F1;
+}
+
+.textclay {
+  color: #EFEFEF;
+}
+
+.backggray {
+  background-color: gray;
+}
+
+.backgyel {
+  background-color: yellow;
+}
+
+.backggreen {
+  background-color: green;
+}
+
+.backgwhite {
+  background-color: white;
+}
+
+.backgdblue {
+  background-color: darkblue;
+}
+
+.backgdgray {
+  background: darkgray;
+}
+
+.backgpurp {
+  background-color: purple;
+}
+
+.backgbl {
+  background-color: black;
+}
+
+.backgred {
+  background-color: red;
+}
+
+.backgdred {
+  background-color: darkred;
+}
+
+.backgaqua {
+  background-color: aqua;
+}
+
+.backgdaqua {
+  background: #009e7d;
+}
+
+.backgdgreen {
+  background-color: darkgreen;
+}
+
+.backglpurple {
+  background-color: #ff00ff;
+}
+
+.backggold {
+  background-color: #e6ff00;
+}
+
+.backgdpurple {
+  background-color: #3a003a;
+}
+
+.backgpink {
+  background-color: pink;
+}
+
+.backgamblue {
+  background-color: #79f8f8;
+}
+
+.backgazur1 {
+  background-color: #007FFF;
+}
+
+.backgazur2 {
+  background-color: #1E7FCB;
+}
+
+.backglightazur {
+  background-color: #74D0F1;
+}
+
+.backgclay {
+  background-color: #EFEFEF;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+.bfnavbar nav {
+  background: #666;
+  font-size: 1.143em;
+  height: 40px;
+  line-height: 30px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+.bfnavbar ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.bfnavbar nav ul li {
+  float: left;
+  display: inline;
+}
+
+.bfnavbar nav a:link,
+.bfnavbar nav a:visited {
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  padding: 5px 23px;
+  text-decoration: none;
+}
+
+.bfnavbar nav a:hover,
+bfnavbar nav a:active,
+.bfnavbar nav .active a:link,
+.bfnavbar nav .active a:visited {
+  background: #4b7dbc;
+  color: #fff;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 690px) {
+  .bfnavbar nav {
+    background: #666;
+    font-size: 1.143em;
+    height: 80px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  .bfnavbar nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .bfnavbar nav li {
+    margin-left: 0 auto;
+    width: 100%;
+  }
+
+  .bfnavbar nav a:link,
+  .bfnavbar nav a:visited {
+    color: #FFF;
+    display: block;
+    height: 30px;
+    padding: 5px 0;
+    text-decoration: none;
+  }
+
+  .bfnavbar nav a:active,
+  .bfnavbar nav .active a:link,
+  .bfnavbar nav .active a:visited {
+    background: #4b7dbc;
+    color: #fff;
+  }
+}
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+body {
+  font-family: Arial;
+  line-height: 1.375;
+}
+
+p {
+  margin: 0 0 1.375em 0;
+  font-size: 1em;
+  line-height: 1.375;
+}
+
+h1 {
+  line-height: 2.05;
+}
+
+h2 {
+  font-size: 1.375em;
+  line-height: 3.1;
+  margin-bottom: -0.32em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.875em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-rendering: optimizeSpeed;
+}
+
+.textjust {
+  text-align: justify;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.textleft {
+  text-align: left;
+}
+
+.textright {
+  text-align: right;
+}
+
+.text25 {
+  font-size: 25%;
+}
+
+.text50 {
+  font-size: 50%;
+}
+
+.text100 {
+  font-size: 100%;
+}
+
+.text150 {
+  font-size: 150%;
+}
+
+.text200 {
+  font-size: 200%;
+}
+
+.textbold {
+  font-weight: bold;
+}
+
+.textitalic {
+  font-style: italic;
+}
+
+em.noitalic {
+  font-style: normal;
+}
+
+a.textdnone {
+  text-decoration: none;
+}
+
+.textlinet {
+  text-decoration: line-through;
+}
+
+.textover {
+  text-decoration: overline;
+}
+
+.textupperc {
+  text-transform: uppercase;
+}
+
+.textdownc {
+  text-transform: lowercase;
+}
+
+.textcapitalz {
+  text-transform: capitalize;
+}
+
+.textident10px {
+  text-indent: 10px;
+}
+
+.textident50px {
+  text-indent: 50px;
+}
+
+.textident100px {
+  text-indent: 100px;
+}
+
+/* P - Letter space */
+.letterspace5px {
+  letter-spacing: 5px;
+}
+
+.letterspace4px {
+  letter-spacing: 4px;
+}
+
+.letterspace3px {
+  letter-spacing: 3px;
+}
+
+.letterspace2px {
+  letter-spacing: 2px;
+}
+
+.letterspace1px {
+  letter-spacing: 1px;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+code, pre, kbd {
+  font-family: Arial;
+}
+
+code.code, pre.pre, kbd.kbd {
+  width: 500px;
+  height: auto;
+  display: block;
+  background-color: #262626;
+  color: #dbdbdb;
+  padding: 4px 4px;
+  word-break: break-all;
+  word-wrap: break-word;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+@media only screen and (max-width: 540px) {
+  code.code, pre.pre, kbd.kbd {
+    width: auto;
+  }
+}
+
+pre.pre {
+  padding: 6px 6px;
+}
+
+kbd {
+  box-shadow: 1px 1px 5px 0px #656565;
+  -moz-box-shadow: 1px 1px 5px 0px #656565;
+  -webkit-box-shadow: 1px 1px 5px 0px #656565;
+  -o-box-shadow: 1px 1px 5px 0px #656565;
+}
+kbd.kbd {
+  background-color: #e0e0e0;
+  color: #656565;
+  padding: 6px 6px;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+/* Float ===============================================================================================*/
+.floatright {
+  float: right;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatnone {
+  float: none;
+}
+
+.outlinestylenone {
+  outline-style: none;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+table {
+  border-collapse: collapse;
+}
+table.table {
+  width: 100%;
+  max-width: 100%;
+}
+
+td {
+  border: 2px solid #adadad;
+}
+
+td, th {
+  display: table-cell;
+  vertical-align: inherit;
+  text-transform: none;
+  text-align: left;
+  padding-left: 2px;
+}
+
+caption {
+  text-align: left;
+}
+caption.caption {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+button.button {
+  display: block;
+  padding: .9em 1em;
+  font: 1.2em;
+  text-decoration: none;
+  background: #4b7dbc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 1px 1px 2px silver;
+  -moz-box-shadow: 1px 1px 2px silver;
+  -webkit-box-shadow: 1px 1px 2px silver;
+  -o-box-shadow: 1px 1px 2px silver;
+  -webkit-appearance: button;
+}
+button.button:hover {
+  cursor: pointer;
+  background-color: #41699d;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+/* DISPLAY ELEMENTS */
+.vhidden {
+  visibility: hidden;
+}
+
+.vnone {
+  display: none;
+}
+
+.displayinline {
+  display: inline;
+}
+
+.displayblock {
+  display: block;
+}
+
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+/* LIST */
+.liststylenone {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+img.imgcenter {
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

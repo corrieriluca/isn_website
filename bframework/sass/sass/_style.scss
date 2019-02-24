@@ -1,0 +1,33 @@
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+/* LIST */
+.liststylenone // List style
+{ 
+    list-style-type:none;
+}
+
+//-------------------------
+// imgcenter Center Image
+// Simple 
+
+img
+{
+    max-width: 100%; // For auto scale
+    height: auto;
+    
+    &.imgcenter
+    {
+        
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }  
+}

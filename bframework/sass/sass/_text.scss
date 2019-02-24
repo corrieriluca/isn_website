@@ -1,0 +1,210 @@
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+// -----------------------
+// Text font
+// -------------------------
+
+
+body
+{
+    font-family: $framework-police;
+    line-height: $line-height;
+}
+
+p 
+{
+  margin: 0 0 $vertical-measure 0; // set bottom margin equal to line-height/vertical measure
+  font-size: 1em;
+  line-height: $line-height;
+}
+
+// -------------------------
+// Font size
+// -------------------------
+// Custom font
+
+h1
+{
+    line-height: 2.05; // tweak to align h1 to baseline within container
+}
+    
+h2
+{
+    font-size: $h2-size;
+    line-height: 3.1; // tweak to align h2 to baseline within container
+     margin-bottom: -0.32em; // tweak to align h2 to baseline within container
+}
+
+h3
+{
+    font-size: $h3-size;
+}
+
+h4
+{
+    font-size: $h4-size;
+}
+
+h5
+{
+    font-size: $h5-size;
+}
+
+h6
+{
+    font-size: $h6-size;
+}
+
+// End font size
+//-------------------------------------
+
+h1, h2, h3, h4, h5, h6 
+{
+  margin: 0;
+  text-rendering: $text-rendering;
+}
+
+
+//-------------------------------------
+// Text Position
+//-------------------------------------
+.textjust // Justify the text
+{
+    text-align:justify;
+}
+.textcenter // Center the text
+{
+    text-align: center;
+}
+.textleft // Set the text to left
+{
+    text-align: left;
+}
+.textright // Set the text to right
+{
+    text-align: right;
+}
+
+
+//-------------------------------------
+// Textsize : set the size of text
+//-------------------------------------
+.text25 // Set 25%
+{
+    font-size: 25%;
+}
+.text50 // 50%
+{
+    font-size: 50%;
+}
+.text100 // Default
+{
+    font-size:100%;
+}
+.text150 // 150%
+{
+    font-size: 150%;
+}
+.text200 // 200%
+{
+    font-size: 200%;
+}
+
+//-------------------------------------
+//Set the text in bold/italic/...
+//-------------------------------------
+
+
+.textbold
+{
+    font-weight: bold;
+}
+
+.textitalic
+{
+    font-style: italic;
+}
+
+em.noitalic
+{
+    font-style: normal;
+}
+
+a.textdnone // Remove the decoration of <A> Tag
+{
+    text-decoration: none;
+}
+
+.textlinet
+{
+    text-decoration: line-through;
+}
+
+.textover
+{
+    text-decoration: overline;
+}
+
+//-------------------------------------
+// Uppercase/Downcase/...
+//-------------------------------------
+
+.textupperc
+{
+    text-transform: uppercase; // The text is only in upper case EX: TesT -> TEST
+}
+.textdownc // The test is in downcase EX: TesT -> test
+{
+    text-transform: lowercase;
+}
+.textcapitalz
+{
+    text-transform: capitalize;
+}
+.textident10px
+{
+    text-indent:10px;
+}
+.textident50px
+{
+    text-indent:50px;
+}
+.textident100px
+{
+    text-indent:100px;
+}
+
+//-------------------------------------
+/* P - Letter space */
+//-------------------------------------
+
+.letterspace5px // Letterspacing - 5 px
+{
+    letter-spacing: 5px;  
+}
+
+.letterspace4px
+{
+    letter-spacing: 4px;  
+}
+
+.letterspace3px
+{
+    letter-spacing: 3px;  
+}
+
+.letterspace2px
+{
+    letter-spacing: 2px;  
+}
+
+.letterspace1px
+{
+    letter-spacing: 1px;  
+}

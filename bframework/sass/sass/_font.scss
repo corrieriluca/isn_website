@@ -1,0 +1,29 @@
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+
+// -------------------------
+// set the font
+// -------------------------
+
+body
+{
+    line-height: $line-height;
+    font-family: $framework-police $framework-font-family;
+}
+
+// -------------------------
+// Antialiasing 
+// -------------------------
+
+html, input, textarea, select, button,code, pre 
+{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.005); // Font smooth hack
+    -webkit-font-smoothing: $text-set-antialiasing; // Font smoothing for webkit navigators
+}
+

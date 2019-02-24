@@ -1,0 +1,68 @@
+ /*
+ButterFramework
+
+A very tiny simple framework
+
+MIT license
+2014
+*/
+
+// ----------------------------
+// Set the font
+code, pre, kbd
+{
+    font-family: $framework-police;
+}
+
+
+// -------------------------------
+// Code
+
+code 
+{
+    &.code
+    {// For code in block
+        width: $code-width;
+        height: auto;
+        display: block;
+        background-color: $code-background;
+        color: $code-color;
+        padding: $code-padding;
+        word-break: break-all;
+        word-wrap: break-word;      
+        
+        @include border-radius($code-border); // Border to 4px
+        
+            @media only screen and (max-width : 540px)
+            {
+                width: auto; // Adapted block code
+            }
+        
+    } // End .code.code
+
+}
+
+pre
+{  
+    &.pre
+    {
+        padding: 6px 6px;
+        @extend code.code // Import code style
+        
+    }
+}
+
+kbd
+{    
+    @include box-shadow(1px 1px 5px 0px #656565); // Box shadow
+    
+    &.kbd
+    {
+            
+        background-color: #e0e0e0;
+        color: #656565;
+        padding: 6px 6px;
+        @extend code.code // Import code style
+    }
+        
+}
